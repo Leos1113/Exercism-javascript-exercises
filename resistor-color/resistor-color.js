@@ -5,9 +5,9 @@
 
 export const colorCode = (color) => {
 
-    const isValidColor = (element) => element === color;
+    if (!COLORS.includes(color)) return;
 
-    return COLORS.findIndex(isValidColor);
+    return COLORS.indexOf(color);
 };
 
 export const COLORS = [
